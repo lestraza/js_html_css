@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Target_anchor</title>
+    <style>
+
+ #zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      .gallery__image_container {
+        width: 150px;
+        height: 100px;
+        position: relative;
+       text-decoration: none;
+      }
+
+      .gallery__image_container > img {
+        width: 150px;
+        height: 100px;
+        position: relative;
+     
+      }
+
+       #mega-modal {
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        display: none;
+       
+      }
+      #mega-modal:target {
+          display: block;
+        }
+
+
+
+
+      .close {
+        display: inline-block;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        font-size: 14pх;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+
+    </style>
+</head>
+<body>
+        <a href="#mega-modal" class="gallery__image_container">
+                <img src="img/veg001.jpg" class="gallery__image">
+            </a>
+            <div id="mega-modal">
+                    <a href="#" class="close">X</a>
+                    <img src="img/veg001.jpg" class="gallery__image">
+
+            </div>
+        
+</body>
+</html>

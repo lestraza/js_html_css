@@ -1,0 +1,194 @@
+html, body, div, a, p, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font: lighter 36px Arial, Helvetica, sans-serif;
+}
+body {
+    max-width: 1920px;
+    min-width: 830px;
+}
+.wrapper {
+    background-color: #f6f5f3;
+    max-width: 980px;
+    margin: 18px auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-areas: "header" "slider" "video" "catalog" "footer";
+}
+header {
+    height: 135px;
+    grid-area: header;
+}
+.logo_box {
+    width: 166px;
+    height: 130px;
+    background: #f6f5f3 url(img/Shape_16.png) no-repeat center;
+    position: relative;
+    left: 74%;
+}
+
+.logo {
+    position: absolute;
+    left: 21%;
+    top: 28%
+}
+
+.slider {
+    grid-area: slider;
+    position: relative;
+}
+.slider_text {
+    width: 660px;
+    margin: 0 auto;
+}
+.slider_cars {
+    margin: 0 auto;
+}
+.slider_image {
+    margin: 0 auto;
+    display: block;
+}
+.arrow_container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transition: all .3s ease-in-out;
+}
+.arrow_container:hover {
+    opacity: .2;
+}
+.left_arrow_container {
+    left: 74px;
+    background: #ffdb4a url(img/arrow.png) no-repeat center;
+}
+.right_arrow_container {
+    right: 74px;
+    background: #ffdb4a url(img/arrow2.png) no-repeat center;
+}
+.video {
+    grid-area: video;
+    margin: 50px 0;
+}
+.video_player {
+    background: url(img/video_snapshot.png) center no-repeat;
+    height: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+.video_shadow {
+    background-color: rgba(41, 54, 60, .5);
+    height: 50px;
+    width: 640px;
+    margin: 0 auto;
+}
+.video_title {
+    color: white;
+    text-align: center;
+    font-size: 29px;
+    padding-top: 8px;
+}
+.video_button_container {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background: #ffdb4a url(img/play_button.png) no-repeat;
+    background-position: 55% center;
+    position: absolute;
+    left: 45%;
+    top: 33%;
+    transition: all .3s ease-in-out;
+}
+.video_button_container:hover {
+    opacity: .2;
+}
+
+
+.catalog {
+    grid-area: catalog;
+    margin-bottom: 50px;
+}
+h2 {
+    font-size: 47px;
+    text-align: center;
+}
+.catalog_container {
+    display: flex;
+    justify-content: space-around;
+}
+.catalog_container:first-of-type {
+    padding-left: 36px;
+}
+.unit {
+    padding: 10px;
+}
+.catalog_icon {
+    height: 85px;
+}
+.catalog_icon_unit1 {
+    width: 100px;
+    background: url(img/Intersections_icon.png) no-repeat;
+    background-position: -197px -38px;
+}
+.catalog_icon_unit2 {
+    width: 100px;
+    background: url(img/Intersections_icon.png) no-repeat;
+    background-position: -296px -38px;
+}
+.catalog_icon_unit3 {
+    width: 195px;
+    background: url(img/Intersections_icon.png) no-repeat;
+    background-position: 0 -38px;
+}
+.catalog_icon_unit4 {
+    width: 195px;
+    background: url(img/Intersections_icon.png) no-repeat;
+    background-position: -396px -38px;
+}
+.catalog_icon_title {
+    font-size: 30px;
+    padding: 15px 0;
+    max-width: 225px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.catalog_icon_title:hover {
+    font-size: 30px;
+}
+.unit_preview {
+    font-size: 16px;
+}
+.footer {
+    grid-area: footer;
+}
+.footer_title {
+    text-align: center;
+    font-size: 42px;
+}
+.footer_button {
+    width: 316px;
+    height: 71px;
+    margin: 60px auto;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffe349, #ffdb04);
+    transition: all .5s linear;
+}
+.footer_button:hover {
+    background: linear-gradient(to bottom, #ffe869, #ffe130);
+    
+}
+.footer_button_title {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+@media (max-width: 1020px) {
+    .wrapper {
+  
+        margin: 18px;
+        
+    }
+ } 
